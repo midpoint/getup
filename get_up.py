@@ -206,7 +206,7 @@ if __name__ == "__main__":
     parser.add_argument("github_token", help="github_token")
     parser.add_argument("repo_name", help="repo_name")
     parser.add_argument(
-        "--weather_message", help="weather_message", nargs="?", default="", const=""
+        "--weather_message", help="weather_message", nargs="?", default=": 19°C，晴", const=""
     )
     parser.add_argument(
         "--tele_token", help="tele_token", nargs="?", default="", const=""
