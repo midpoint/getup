@@ -72,6 +72,7 @@ def get_today_get_up_status(issue):
 
 def make_pic_and_save(sentence):
     prompt = f"revise `{sentence}` to a stable diffusion prompt"
+    print('prompt',prompt)    #add
     try:
         completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
