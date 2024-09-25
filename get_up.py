@@ -162,7 +162,7 @@ def main(
     if weather_message:
         weather_message = f"现在的天气是{weather_message}\n"
         body = weather_message + early_message
-    body = body + f"\n\n关于昨天的问题？\n{yesterday_question}"
+    # body = body + f"\n\n关于昨天的问题？\n{yesterday_question}"
     if is_get_up_early:
         comment = body + f"![image]({images_list[0]})"
         issue.create_comment(comment)
