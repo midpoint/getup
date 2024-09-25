@@ -19,7 +19,7 @@ GET_UP_MESSAGE_TEMPLATE = "今天的起床时间是--{get_up_time}.\r\n\r\n起�
 SENTENCE_API = "https://v1.jinrishici.com/all"
 
 DEFAULT_SENTENCE = (
-    "赏花归去马如飞\r\n去马如飞酒力微\r\n酒力微醒时已暮\r\n醒时已暮赏花归\r\n"
+    "青春须早为\r\n岂能长少年\r\n"
 )
 TIMEZONE = "Asia/Shanghai"
 YESTERDAY_QUESTION = "问我关于我昨天过的怎么样的五个问题。请不要包含这些问题：{questions}, 并只返回问题。"
