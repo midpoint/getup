@@ -78,6 +78,7 @@ def make_pic_and_save(sentence):
             messages=[{"role": "user", "content": prompt}],
             model="gpt-4o-mini",
         )
+        print('81',completion.choices[0].message.content)    #add
         sentence = completion.choices[0].message.content.encode("utf8").decode()
         print(f"revies: {sentence}")
     except:
