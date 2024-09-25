@@ -75,7 +75,7 @@ def make_pic_and_save(sentence):
     try:
         completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="gpt-4o-2024-05-13",
+            model="gpt-4o-mini",
         )
         sentence = completion.choices[0].message.content.encode("utf8").decode()
         print(f"revies: {sentence}")
