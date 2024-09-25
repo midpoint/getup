@@ -102,6 +102,7 @@ def make_pic_and_save(sentence):
 
 def make_get_up_message():
     sentence = get_one_sentence()
+    print('sentence',sentence)   #add
     now = pendulum.now(TIMEZONE)
     # 3 - 7 means early for me
     is_get_up_early = 3 <= now.hour <= 7
