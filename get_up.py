@@ -129,7 +129,7 @@ def get_yesterday_question():
         messages=[
             {"role": "user", "content": YESTERDAY_QUESTION.format(questions=questions)}
         ],
-        model="gpt-3.5",
+        model="gpt-4o-mini",
         # model="gpt-4o-2024-05-13",
     )
     answer = completion.choices[0].message.content.encode("utf8").decode()
